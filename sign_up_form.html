@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Sign-up</title>
+</head>
+<body>
+    <div class="image-container">
+        <div class="title-container">
+            <img class="logo" src="odin.png" alt="odin-logo">
+            <div class="title">ODIN</div>
+        </div>
+        <div class="footer">Photo by <a class="footer" href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a class="footer" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+    </div>
+    <div class="form-container">
+        <div class="form-header">
+            <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h3> 
+            <h3>Sign up <em>now</em> to get started.</h3>
+            <h3>You <em>know</em> you want to.</h3>
+        </div>
+        <fieldset>
+            <div>Let's do this!</div>
+            <form action="" method="get" id="form">
+                <label for="first-name">FIRST NAME<input type="text" minlength="2" id="first-name" name="first_name"></label>
+                
+                <label for="last-name">LAST NAME<input type="text" name="last_name" id="last-name" minlength="2"></label>
+
+                <label for="email">EMAIL<input type="email" name="email" id="email"></label>
+
+                <label for="phone-num">PHONE NUMBER<input type="tel" name="phone-num" id="phone-num"></label>
+                
+                <label for="password">PASSWORD<input type="password" name="password" id="password" minlength="8" onchange="check()">
+                    <div id="error-message">&nbsp;</div>
+                </label>
+             
+                <label for="confirm-password">CONFIRM PASSWORD<input type="password" name="confirm_password" id="confirm-password" onchange="check()">
+                </label>
+               
+            </form>
+        </fieldset>
+        <div class="form-footer">
+            <button type="submit" form="form">Create Account</button>
+            <div>Already have an account? <a href="">Log in</a></div>
+        </div>
+    </div>
+</body>
+</html>
